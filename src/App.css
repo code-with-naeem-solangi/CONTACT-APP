@@ -1,38 +1,145 @@
-.App {
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background: url(./landscape-sunset-vector-illustration_602454-1908.avif);
+  background-size: cover;
+  /* background-image:linear-gradient(to right, yellow,green,indigo,violet); */
+}
+.cner {
+  max-width: 900px;
+  margin: 0% auto;
+}
+.applybox {
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgb(150, 150, 150, 0.33);
+  margin: 0% auto;
+  margin-top: 50px;
+  box-shadow: 4px 4px 4px rgba(1, 1, 1, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+.smallweb {
+  font-size: 20px;
+}
+.form_container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+.lbl {
+  font-size: 16px;
+  margin-bottom: 7px;
+  color: white;
+}
+.spcl {
+  display: flex;
+  flex-direction: column;
+  margin-left: 63%;
+}
+.spcl-lbl {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 7px;
+  padding-left: 70px;
+}
+.inp {
+  padding: 6px 10px;
+  border: 2px solid #ccc;
+
+  font-size: 15px;
+  color: white;
+  background: transparent;
+  margin: auto;
+  outline: none;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.inp:hover {
+  outline: none;
+}
+
+.button_container {
+  margin-top: 20px;
+}
+.bn {
+  background-color: gray;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 7px;
+  transition: 0.3s ease-in;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.bn:hover {
+  background-color: green;
+  color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  outline: none;
+}
+.flex {
+  display: flex;
+}
+tr,
+td,
+th {
+  padding: 10px;
+  border: none;
+}
+.deleteAll {
+  background-color: gray;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 118px;
+  transition: 0.5s ease-in;
+}
+.deleteAll:hover {
+  background-color: red;
+  transition: 0.5s ease-out;
+}
+.center {
+  margin: auto;
+  color: white;
+  padding-bottom: 10px;
+}
+.center-text {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.td {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.right-one {
+  border: none;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: rgb(175, 47, 47);
+  cursor: pointer;
   color: white;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-two {
+  background-color: green;
+  margin-top: 5px;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
 }
